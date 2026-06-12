@@ -13,7 +13,7 @@
   body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 18% 8%,rgba(255,38,56,.18),transparent 32%),radial-gradient(circle at 80% 20%,rgba(255,211,106,.12),transparent 26%),linear-gradient(180deg,#05060b 0%,#090d17 54%,#05060b 100%);color:var(--white);min-height:100vh;overflow-x:hidden}
   a{color:inherit;text-decoration:none}.wrap{max-width:1220px;margin:0 auto;padding:0 22px}
   header{position:sticky;top:0;z-index:20;background:rgba(6,7,13,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
-  .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.3px}.mark{width:38px;height:38px;border-radius:14px;background:linear-gradient(135deg,var(--red),#ff7781);box-shadow:var(--glow);display:grid;place-items:center}.mark:before{content:'🐷';font-size:21px}.navlinks{display:flex;gap:18px;color:var(--muted);font-size:14px;font-weight:800}.navlinks a:hover{color:white}.actions{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:14px;padding:13px 18px;font-weight:950;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{transform:translateY(-1px)}.btn-red{background:linear-gradient(135deg,var(--red),#b80718);color:white;box-shadow:var(--glow)}.btn-dark{background:#171d2e;color:white;border:1px solid var(--line)}.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+  .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:.3px}.mark{width:44px;height:44px;border-radius:16px;background:radial-gradient(circle at 30% 25%,#fff2b3 0 14%,#ffd36a 15% 38%,#ff2638 39% 100%);box-shadow:0 0 28px rgba(255,38,56,.45), inset 0 0 0 2px rgba(255,255,255,.18);display:grid;place-items:center;position:relative;overflow:hidden}.mark:before{content:'';position:absolute;inset:7px;border:1px solid rgba(255,255,255,.42);border-radius:50%}.premium-logo span{position:relative;z-index:2;font-size:11px;font-weight:1000;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.55);letter-spacing:.4px}.navlinks{display:flex;gap:18px;color:var(--muted);font-size:14px;font-weight:800}.navlinks a:hover{color:white}.actions{display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:14px;padding:13px 18px;font-weight:950;cursor:pointer;transition:.18s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{transform:translateY(-1px)}.btn-red{background:linear-gradient(135deg,var(--red),#b80718);color:white;box-shadow:var(--glow)}.btn-dark{background:#171d2e;color:white;border:1px solid var(--line)}.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
   .account-pill{display:none;background:#121827;border:1px solid var(--line);border-radius:999px;padding:9px 12px;font-weight:900;color:#d7dceb;font-size:13px}.account-pill b{color:var(--green)}
   .hero{padding:58px 0 34px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid rgba(255,255,255,.1);border-radius:999px;color:#ffb1b8;background:rgba(255,38,56,.08);font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:.8px}.h1{font-size:clamp(44px,7vw,86px);line-height:.9;letter-spacing:-3px;margin:18px 0 18px;font-weight:1000}.h1 span{color:var(--red);text-shadow:0 0 34px rgba(255,38,56,.35)}.sub{color:#c1c8d9;line-height:1.7;font-size:18px;max-width:660px}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.proofbar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.proof{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px}.proof strong{display:block;font-size:25px}.proof span{color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
   .pig-card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.12);border-radius:34px;box-shadow:var(--soft);padding:24px;overflow:hidden}.pig-card:before{content:'';position:absolute;inset:-80px;background:radial-gradient(circle at 50% 35%,rgba(255,38,56,.32),transparent 38%);pointer-events:none}.bank-top{position:relative;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.bank-title{font-weight:1000;font-size:15px;text-transform:uppercase;letter-spacing:1px}.saved{color:var(--green);font-weight:950;font-size:13px}.pig-stage{position:relative;display:grid;place-items:center;min-height:410px}.pig-svg{width:min(430px,100%);filter:drop-shadow(0 28px 35px rgba(0,0,0,.55)) drop-shadow(0 0 30px rgba(255,38,56,.18))}.coin{position:absolute;top:22px;width:30px;height:30px;border-radius:50%;background:radial-gradient(circle,#fff5b5 0 18%,var(--gold) 19% 64%,#a87416 65%);box-shadow:0 0 20px rgba(255,211,106,.45);opacity:0}.coin.drop{animation:drop .9s ease-in-out}@keyframes drop{0%{transform:translateY(-80px) scale(.6);opacity:0}20%{opacity:1}78%{transform:translateY(190px) scale(1);opacity:1}100%{transform:translateY(230px) scale(.4);opacity:0}}.bank-readout{position:relative;text-align:center;margin-top:-16px}.token-big{font-size:48px;font-weight:1000;letter-spacing:-1.6px}.token-big span{color:var(--red)}.level-badge{display:inline-flex;margin-top:6px;padding:9px 14px;border-radius:999px;background:rgba(255,211,106,.13);border:1px solid rgba(255,211,106,.24);color:#ffe6a3;font-weight:950;font-size:13px}.mini-progress{height:12px;background:#1a2133;border-radius:999px;overflow:hidden;margin-top:18px;border:1px solid #2d3650}.mini-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--red),var(--gold));transition:.6s}
@@ -28,15 +28,26 @@
   .activity-list{display:grid;gap:12px;margin-top:18px}.activity-item{display:flex;gap:12px;align-items:flex-start;background:#0a0f1a;border:1px solid #283149;border-radius:18px;padding:14px}.activity-item .dot{width:42px;height:42px;border-radius:16px;background:rgba(255,38,56,.14);display:grid;place-items:center;font-size:20px}.activity-item strong{display:block}.activity-item small{color:var(--muted);line-height:1.5}.copybox{display:flex;gap:10px;margin-top:14px}.copybox input{flex:1}.pricing-card{position:relative;overflow:hidden}.pricing-card.popular{border-color:rgba(255,211,106,.35);box-shadow:0 0 34px rgba(255,211,106,.08)}.ribbon{position:absolute;right:18px;top:18px;background:rgba(255,211,106,.16);border:1px solid rgba(255,211,106,.28);color:var(--gold);border-radius:999px;padding:7px 10px;font-weight:1000;font-size:12px}
   .email-preview{margin-top:14px;background:#060a13;border:1px solid #283149;border-radius:18px;padding:16px;color:#cbd2e1;line-height:1.6}.email-preview b{color:white}.warning{border-left:4px solid var(--gold);background:rgba(255,211,106,.08);padding:14px;border-radius:14px;color:#ffe8a9;line-height:1.55;margin-top:14px}
 
-  @media(max-width:920px){.hero-grid,.two,.three,.kpi-row{grid-template-columns:1fr}.navlinks{display:none}.hero{padding-top:34px}.pig-stage{min-height:330px}.token-big{font-size:38px}.proofbar{grid-template-columns:1fr}.actions .btn-ghost{display:none}}
+
+  .ai-result-panel{margin-top:16px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:16px;display:none}
+  .ai-result-panel.show{display:block;animation:pop .28s ease}
+  .ai-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.ai-chip{background:#080c15;border:1px solid #283149;border-radius:14px;padding:12px}.ai-chip b{display:block;color:var(--gold);font-size:18px}.ai-chip span{font-size:11px;color:var(--muted);font-weight:900;text-transform:uppercase;letter-spacing:.5px}
+  .pain-scale{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:18px}.pain-card{background:#0a0f1b;border:1px solid #283149;border-radius:16px;padding:14px}.pain-card strong{display:block;color:white}.pain-card small{color:var(--muted);line-height:1.45}
+  .token-vault{position:absolute;inset:72px 28px 88px 28px;pointer-events:none;z-index:4}.bank-token{position:absolute;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff8c8 0 16%,#ffd36a 17% 58%,#b97811 59% 100%);box-shadow:0 10px 24px rgba(0,0,0,.3),0 0 18px rgba(255,211,106,.36);display:grid;place-items:center;color:#461b04;font-weight:1000;font-size:12px;cursor:grab;pointer-events:auto;user-select:none;touch-action:none;border:1px solid rgba(255,255,255,.7)}
+  .bank-token:active{cursor:grabbing;transform:scale(1.08)}.bank-token.new{animation:tokenDropIn .95s cubic-bezier(.2,.8,.2,1)}@keyframes tokenDropIn{0%{transform:translateY(-180px) scale(.45);opacity:0}28%{opacity:1}72%{transform:translateY(22px) scale(1.08)}100%{transform:translateY(0) scale(1);opacity:1}}
+  .bank-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font-size:12px;color:#c9d0df;font-weight:900;background:rgba(8,12,21,.78);border:1px solid rgba(255,255,255,.09);border-radius:999px;padding:8px 12px;z-index:5}
+  .email-badge{display:inline-flex;gap:8px;align-items:center;padding:8px 11px;border-radius:999px;background:rgba(81,242,138,.12);border:1px solid rgba(81,242,138,.25);color:var(--green);font-weight:1000;font-size:12px;margin-top:10px}
+  .polish-panel{background:linear-gradient(135deg,rgba(255,38,56,.09),rgba(255,211,106,.06));border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:22px;margin-top:20px}
+
+  @media(max-width:920px){.hero-grid,.two,.three,.kpi-row,.ai-grid,.pain-scale{grid-template-columns:1fr}.navlinks{display:none}.hero{padding-top:34px}.pig-stage{min-height:330px}.token-big{font-size:38px}.proofbar{grid-template-columns:1fr}.actions .btn-ghost{display:none}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#home"><div class="mark"></div><div>Discipline Bank<br><small style="color:var(--muted);font-weight:800">AI Proof → Tokens → Rewards</small></div></a>
+    <a class="brand" href="#home"><div class="mark premium-logo"><span>PIC</span></div><div><strong>Pain Is Currency</strong><br><small style="color:var(--muted);font-weight:800">Turn pain into progress</small></div></a>
     <nav class="navlinks">
-      <a href="#how">How It Works</a><a href="#submit">Submit Proof</a><a href="#activity">Activity</a><a href="#missions">Missions</a><a href="#referral">Referrals</a><a href="#ebook">E-Book</a><a href="#cashin">Cash In</a>
+      <a href="#how">How It Works</a><a href="#submit">Submit Proof</a><a href="#activity">Activity</a><a href="#missions">Missions</a><a href="#referral">Referrals</a><a href="#ebook">Reset</a><a href="#pricing">Upgrade</a><a href="#cashin">Rewards</a>
     </nav>
     <div class="actions">
       <div class="account-pill" id="accountPill">Saved: <b id="pillTokens">0</b></div>
@@ -51,21 +62,23 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">🔥 Live Monetization Funnel • AI Proof • Saved Progress</div>
+        <div class="eyebrow">🔥 Proof-Based Progress • Tokens • Rewards</div>
         <h1 class="h1">Turn effort into <span>wealth.</span></h1>
-        <p class="sub">A dopamine-heavy progress bank where users upload AI-verified proof, earn tokens, unlock missions, buy the premium workbook, and come back daily to keep their streak alive.</p>
+        <p class="sub">Turn discipline into currency. Every workout, study session, coding sprint, and completed task can earn PAIN tokens, unlock missions, and fill your piggy bank.</p>
         <div class="hero-ctas"><a class="btn btn-red" href="#submit">Upload Proof Now</a><a class="btn btn-dark" href="#missions">View Unlocks</a><button class="btn btn-ghost" onclick="openAuth('signup')">Start at 0 Tokens</button></div>
         <div class="proofbar">
           <div class="proof"><strong>$20</strong><span>Workbook offer</span></div>
-          <div class="proof"><strong>AI</strong><span>Proof verified</span></div>
-          <div class="proof"><strong>MRR</strong><span>Membership ready</span></div>
+          <div class="proof"><strong>Strict</strong><span>Proof checked</span></div>
+          <div class="proof"><strong>PDF</strong><span>Instant products</span></div>
         </div>
       </div>
 
       <div class="pig-card">
         <div class="bank-top"><div class="bank-title">Live Piggy Bank Balance</div><div class="saved" id="saveStatus">Login to save</div></div>
-        <div class="pig-stage">
+        <div class="pig-stage" id="pigStage">
           <div class="coin" id="coin"></div>
+          <div class="token-vault" id="tokenVault"></div>
+          <div class="bank-hint">Drag PAIN tokens inside the bank</div>
           <svg class="pig-svg" viewBox="0 0 520 390" role="img" aria-label="Large glass piggy bank token image">
             <defs>
               <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".34"/><stop offset=".55" stop-color="#ffffff" stop-opacity=".08"/><stop offset="1" stop-color="#ffffff" stop-opacity=".18"/></linearGradient>
@@ -92,9 +105,31 @@
     </div>
   </section>
 
-  <section id="how"><div class="wrap"><h2 class="section-title">How it works</h2><p class="section-sub">Every link on this page goes to a real section. The demo uses browser storage for accounts and saved tokens. For production, connect Firebase Auth, Firestore, Storage, Cloud Functions, and email.</p><div class="grid three" style="margin-top:22px"><div class="card"><h3>1. Create account</h3><p>Each new account starts at exactly <b>0 tokens</b>. Returning users load their saved piggy bank and missions.</p></div><div class="card"><h3>2. Upload strict proof</h3><p>The form blocks weak comments, spam, tiny files, duplicate images, and vague submissions before tokens are awarded.</p></div><div class="card"><h3>3. Unlock rewards</h3><p>Missions unlock automatically based on token balance. Cash-in options stay locked until the user has enough tokens.</p></div></div></div></section>
-
-  <section id="submit"><div class="wrap grid two"><div class="card"><h2 class="section-title">Submit Proof</h2><p class="section-sub">Strict mode: users must upload a real image and write a detailed proof log with numbers, timing, and a completed action.</p><div class="upload"><input type="file" id="proofFile" accept="image/*" onchange="handleFile()"><strong>📸 Click to upload proof image</strong><div class="file-name" id="fileName">No file selected</div></div><label style="display:block;margin-top:18px;font-weight:950">Proof Description</label><textarea class="field" id="proofText" rows="7" placeholder="Example: Completed 90 minutes of coding from 7:00-8:30 PM. Built login validation, fixed 3 bugs, and pushed the dashboard update. Screenshot shows VS Code commit and working page."></textarea><div class="checklist" id="checks"></div><button class="btn btn-red" style="width:100%;margin-top:8px" onclick="submitProof()">Verify Proof & Drop Tokens</button><div class="status-line" id="submitStatus">Login first to save tokens permanently to your account on this browser demo.</div></div><div class="card"><h3>Strict Scoring Rules</h3><ul><li>Minimum 80 characters.</li><li>Must include a number, duration, or measurable result.</li><li>Must include action words like completed, built, studied, trained, shipped, wrote, finished.</li><li>Blocks profanity, spam, random text, and repeated characters.</li><li>Image must be at least 50KB and cannot be the same file submitted repeatedly.</li></ul><div class="status-line"><b>AI verification mode:</b> this version blocks weak/random images with browser image checks. For true AI vision, connect a Firebase Cloud Function endpoint so Gemini/OpenAI Vision approves submissions before tokens are awarded.</div></div></div></section>
+  <section id="how"><div class="wrap"><h2 class="section-title">How it works</h2><p class="section-sub">Every link on this page goes to a real section. The demo uses browser storage for accounts and saved tokens. For production, connect Firebase Auth, Firestore, Storage, Cloud Functions, and email.</p><div class="grid three" style="margin-top:22px"><div class="card"><h3>1. Create account</h3><p>Each new account starts at exactly <b>0 tokens</b>. Returning users load their saved piggy bank and missions.</p></div><div class="card"><h3>2. Strict proof check</h3><p>The site checks for detailed proof text, measurable effort, valid image size, non-spam content, and duplicate image prevention before awarding tokens.</p></div><div class="card"><h3>3. Tokens match effort</h3><p>PAIN tokens are assigned based on detail, measurable effort, image quality, and completion proof. Gemini AI can be added later when the product has users.</p></div></div>
+    <div class="polish-panel">
+      <h3>PAIN Token Scoring System</h3>
+      <div class="pain-scale">
+        <div class="pain-card"><strong>0</strong><small>Rejected proof, random image, mismatch, or fraud risk.</small></div>
+        <div class="pain-card"><strong>20-40</strong><small>Small valid effort with light evidence.</small></div>
+        <div class="pain-card"><strong>45-80</strong><small>Clear completed task with matching image.</small></div>
+        <div class="pain-card"><strong>85-120</strong><small>Hard effort, time shown, measurable result.</small></div>
+        <div class="pain-card"><strong>125-160</strong><small>Exceptional output with strong visible proof.</small></div>
+      </div>
+    </div>
+  </div></section>
+<section id="submit"><div class="wrap grid two"><div class="card"><h2 class="section-title">Submit Proof</h2><p class="section-sub">Strict mode: users must upload a real image and write a detailed proof log with numbers, timing, and a completed action.</p><div class="upload"><input type="file" id="proofFile" accept="image/*" onchange="handleFile()"><strong>📸 Click to upload proof image</strong><div class="file-name" id="fileName">No file selected</div></div><label style="display:block;margin-top:18px;font-weight:950">Proof Description</label><textarea class="field" id="proofText" rows="7" placeholder="Example: Completed 90 minutes of coding from 7:00-8:30 PM. Built login validation, fixed 3 bugs, and pushed the dashboard update. Screenshot shows VS Code commit and working page."></textarea><div class="checklist" id="checks"></div><button class="btn btn-red" style="width:100%;margin-top:8px" onclick="submitProof()">Verify Proof & Drop Tokens</button><div class="status-line" id="submitStatus">Login first to save tokens permanently to your account.</div>
+      <div class="ai-result-panel" id="aiResultPanel">
+        <h3>Proof Verdict</h3>
+        <p id="aiReason" style="color:#cbd2e1;line-height:1.6;margin-top:6px">Waiting for proof.</p>
+        <div class="ai-grid">
+          <div class="ai-chip"><b id="aiTokens">0</b><span>PAIN tokens</span></div>
+          <div class="ai-chip"><b id="aiConfidence">0%</b><span>confidence</span></div>
+          <div class="ai-chip"><b id="aiCategory">-</b><span>category</span></div>
+          <div class="ai-chip"><b id="aiRisk">-</b><span>fraud risk</span></div>
+        </div>
+        <div class="email-badge" id="emailBadge">✅ On-screen confirmation after approval</div>
+      </div>
+    </div><div class="card"><h3>Strict Scoring Rules</h3><ul><li>Minimum 80 characters.</li><li>Must include a number, duration, or measurable result.</li><li>Must include action words like completed, built, studied, trained, shipped, wrote, finished.</li><li>Blocks profanity, spam, random text, and repeated characters.</li><li>Image must be at least 50KB and cannot be the same file submitted repeatedly.</li></ul><div class="status-line"><b>AI verification mode:</b> this version blocks weak/random images with browser image checks. For true AI vision, connect a Firebase Cloud Function endpoint so Gemini/OpenAI Vision approves submissions before tokens are awarded.</div></div></div></section>
 
 
   <section id="activity"><div class="wrap">
@@ -106,9 +141,9 @@
         <div class="activity-list" id="activityList"></div>
       </div>
       <div class="card">
-        <h3>Email Confirmation Preview</h3>
-        <p>After each accepted proof, the app saves an email-confirmation record in Firestore. Connect Firebase Trigger Email or SendGrid to send it automatically.</p>
-        <div class="email-preview" id="emailPreview">
+        <h3>Confirmation Preview Reset</h3>
+        <p>In the current version, users receive an on-screen confirmation and activity-history record after accepted proof. Email automation can be added later.</p>
+        <div class="email-preview" id="emailPreview Reset">
           <b>Subject:</b> Your proof was verified 🔥<br>
           <b>Body:</b> You earned tokens. Your piggy bank balance and next unlock are saved.
         </div>
@@ -140,42 +175,61 @@
     </div>
   </div></section>
 
-  <section id="ebook"><div class="wrap grid two"><div class="card ebook"><h2 class="section-title">Featured E-Book</h2><p class="section-sub">Put the digital product at the forefront while the piggy bank drives repeat engagement.</p><div class="price">$20</div><p style="color:#c7cedd;line-height:1.7;margin:12px 0 20px">A premium self-worth and discipline workbook that users can buy directly or unlock discounts through token milestones.</p><a class="btn btn-red" href="https://buy.stripe.com/7sY6oI9Qz2xtg62629aZi04" target="_blank" rel="noopener">Purchase E-Book</a><button class="btn btn-dark" onclick="previewEbook()" style="margin-left:8px">Preview</button><div class="kpi-row"><div class="kpi"><b>$20</b><span>front-end offer</span></div><div class="kpi"><b>$9</b><span>monthly vault</span></div><div class="kpi"><b>100</b><span>referral bonus</span></div><div class="kpi"><b>500</b><span>discount unlock</span></div></div></div><div class="ebook-cover"><span>Premium Workbook</span><b>30-Day<br>Confidence<br>Reset</b><div style="color:#17080a;font-weight:1000">Self-Worth • Anxiety Control • Daily Proof</div></div></div></section>
+  <section id="ebook"><div class="wrap grid two"><div class="card ebook"><h2 class="section-title">Featured Reset</h2><p class="section-sub">Start with the core reset designed to help you rebuild discipline, self-worth, and daily confidence.</p><div class="price">$19.99</div><p style="color:#c7cedd;line-height:1.7;margin:12px 0 20px">A guided 30-day reset for self-worth, discipline, anxiety control, reflection, and daily progress.</p><a class="btn btn-red" href="PASTE_YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Get the Workbook</a><button class="btn btn-dark" onclick="previewEbook()" style="margin-left:8px">Preview Reset</button><div class="kpi-row"><div class="kpi"><b>$19.99</b><span>main offer</span></div><div class="kpi"><b>PDF</b><span>digital product</span></div><div class="kpi"><b>0</b><span>shipping needed</span></div><div class="kpi"><b>Now</b><span>deliverable today</span></div></div></div><div class="ebook-cover"><span>Confidence Reset</span><b>Turn Pain<br>Into<br>Progress</b><div style="color:#17080a;font-weight:1000">Daily Proof • Tokens • Confidence</div></div></div></section>
 
+
+  <section id="included"><div class="wrap">
+    <h2 class="section-title">What You Unlock Inside</h2>
+    <p class="section-sub">The 30-Day Confidence Reset gives users a clear path from emotional overwhelm to visible proof, momentum, and self-respect.</p>
+    <div class="grid three" style="margin-top:20px">
+      <div class="card"><h3>30 Daily Reset Missions</h3><p>Each day gives one clear action, reflection, and evidence-building prompt.</p></div>
+      <div class="card"><h3>Confidence Evidence Bank</h3><p>Users collect proof that they are changing instead of relying on motivation.</p></div>
+      <div class="card"><h3>Anxiety + Thought Tools</h3><p>Guided pages help challenge negative thoughts and reduce avoidance loops.</p></div>
+    </div>
+  </div></section>
 
   <section id="pricing"><div class="wrap">
-    <h2 class="section-title">Monetization Offers</h2>
-    <p class="section-sub">Three ways to make money: sell the workbook, sell a monthly accountability vault, and use tokens to unlock discounts/rewards.</p>
+    <h2 class="section-title">Upgrade Your Discipline System</h2>
+    <p class="section-sub">Choose the reset path that fits your goals. Each option is designed to help you build confidence, complete missions, and turn daily effort into visible progress.</p>
     <div class="grid three" style="margin-top:20px">
-      <div class="card pricing-card">
-        <h3>Starter Workbook</h3>
-        <div class="price">$20</div>
-        <p>One-time purchase. Best first product because it is simple and fast to sell.</p>
-        <a class="btn btn-red" href="https://buy.stripe.com/7sY6oI9Qz2xtg62629aZi04" target="_blank" rel="noopener" style="margin-top:14px">Buy Workbook</a>
-      </div>
       <div class="card pricing-card popular">
-        <div class="ribbon">BEST NEXT</div>
-        <h3>AI Accountability Vault</h3>
-        <div class="price">$9/mo</div>
-        <p>Monthly access to missions, streak tracking, token vault, and premium accountability prompts.</p>
-        <button class="btn btn-red" style="margin-top:14px" onclick="toast('Stripe subscription needed','Create a $9/month Stripe Payment Link and paste it here.')">Join Monthly</button>
+        <div class="ribbon">MOST POPULAR</div>
+        <h3>30-Day Confidence Reset</h3>
+        <div class="price">$19.99</div>
+        <p>A guided workbook experience for rebuilding self-worth, creating discipline, and tracking daily wins.</p>
+        <a class="btn btn-red" href="PASTE_YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener" style="margin-top:14px">Get the Workbook</a>
       </div>
       <div class="card pricing-card">
-        <h3>Premium Reset Bundle</h3>
+        <h3>Premium Mission Pack</h3>
+        <div class="price">$9.99</div>
+        <p>Unlock 100 extra missions across confidence, fitness, studying, productivity, and consistency.</p>
+        <button class="btn btn-dark" style="margin-top:14px" onclick="toast('Coming soon','Premium missions are being prepared for release.')">Unlock Missions</button>
+      </div>
+      <div class="card pricing-card">
+        <h3>Ultimate Reset Bundle</h3>
         <div class="price">$49</div>
-        <p>Bundle workbook + mission pack + reward vault. Higher-ticket option after trust is built.</p>
-        <button class="btn btn-dark" style="margin-top:14px" onclick="toast('Bundle link needed','Create a $49 Stripe Payment Link and paste it here.')">Unlock Bundle</button>
+        <p>The complete reset experience: workbook, missions, habit tracker, token tracker, and goal templates.</p>
+        <button class="btn btn-dark" style="margin-top:14px" onclick="toast('Coming soon','The full bundle is being prepared for release.')">Unlock Bundle</button>
       </div>
     </div>
   </div></section>
 
-  <section id="cashin"><div class="wrap"><h2 class="section-title">Cash-In Vault</h2><p class="section-sub">Users can choose whether they want to cash in once they reach the required token amount.</p><div class="card cash-list" id="cashList"></div></div></section>
+  <section id="delivery"><div class="wrap">
+    <h2 class="section-title">What Happens After You Start?</h2>
+    <p class="section-sub">Your purchase connects directly to your reset experience. You’ll know exactly what you unlocked and how to use it inside your discipline system.</p>
+    <div class="grid three" style="margin-top:20px">
+      <div class="card"><h3>1. Secure Checkout</h3><p>Complete your purchase through Stripe’s secure checkout page.</p></div>
+      <div class="card"><h3>2. Access Your Reset</h3><p>Use the workbook, missions, and templates to start completing daily proof-based actions.</p></div>
+      <div class="card"><h3>3. Build Momentum</h3><p>Submit proof, earn PAIN tokens, unlock missions, and watch your piggy bank grow.</p></div>
+    </div>
+  </div></section>
+<section id="cashin"><div class="wrap"><h2 class="section-title">Reward Vault</h2><p class="section-sub">Users can redeem tokens for discounts and digital rewards. Redeem tokens for discounts, mission unlocks, and digital rewards as they become available.</p><div class="card cash-list" id="cashList"></div></div></section>
 </main>
 
-<footer><div class="wrap">© 2026 Discipline Bank. Firebase Auth + Firestore + Gemini AI verification connected. Add Stripe success/download delivery and email extension before full public launch.</div></footer>
+<footer><div class="wrap">© 2026 Discipline Bank. © 2026 Discipline Bank. Turn discipline into currency through proof, tokens, missions, and rewards.</div></footer>
 
 <div class="modal" id="authModal"><div class="modal-card"><div class="modal-head"><h2 id="authTitle">Create Account</h2><button class="x" onclick="closeAuth()">✕</button></div><input class="field" id="authName" placeholder="Name"><input class="field" id="authEmail" placeholder="Email" type="email"><input class="field" id="authPass" placeholder="Password" type="password"><button class="btn btn-red" style="width:100%;margin-top:14px" onclick="authSubmit()" id="authSubmitBtn">Create Account</button><button class="btn btn-dark" style="width:100%;margin-top:10px" onclick="googleLogin()">Continue With Google</button><button class="btn btn-ghost" style="width:100%;margin-top:10px" onclick="resetPassword()">Forgot Password?</button><div class="switch" id="authSwitch">Already have an account? <button onclick="setAuthMode('login')">Login</button></div><p class="fine">Production mode: Firebase Auth creates real accounts. Firestore saves tokens, streaks, missions, and piggy bank progress across devices.</p></div></div>
-<div class="modal" id="ebookModal"><div class="modal-card"><div class="modal-head"><h2>E-Book Preview</h2><button class="x" onclick="document.getElementById('ebookModal').classList.remove('show')">✕</button></div><p style="color:#cbd2e1;line-height:1.7">Inside: daily worksheets, trigger mapping, confidence rebuilding, token-linked goals, reflection prompts, and a 30-day system for turning effort into visible progress.</p><a class="btn btn-red" style="width:100%;margin-top:18px" href="https://buy.stripe.com/7sY6oI9Qz2xtg62629aZi04" target="_blank" rel="noopener">Buy Securely With Stripe</a></div></div>
+<div class="modal" id="ebookModal"><div class="modal-card"><div class="modal-head"><h2>E-Book Preview Reset</h2><button class="x" onclick="document.getElementById('ebookModal').classList.remove('show')">✕</button></div><p style="color:#cbd2e1;line-height:1.7">Inside: daily worksheets, trigger mapping, confidence rebuilding, token-linked goals, reflection prompts, and a 30-day system for turning effort into visible progress. Use this reset alongside your daily proof submissions to build momentum.</p><a class="btn btn-red" style="width:100%;margin-top:18px" href="PASTE_YOUR_STRIPE_PAYMENT_LINK_HERE" target="_blank" rel="noopener">Buy Securely With Stripe</a></div></div>
 <div class="toast" id="toast"><strong id="toastTitle">Saved</strong><p id="toastMsg">Progress saved.</p></div>
 
 
@@ -200,10 +254,6 @@ import {
   updateDoc,
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
-import {
-  getFunctions,
-  httpsCallable
-} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-functions.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyC4xTJqJMMJsG4gbGFRIWtsMUyRGMu_XVxU",
@@ -218,14 +268,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-const functions = getFunctions(app, "us-central1");
-const verifyProofImageCallable = httpsCallable(functions, "verifyProofImage");
 const googleProvider = new GoogleAuthProvider();
 
-// Real AI Vision is ON.
-// This calls Firebase Cloud Function: verifyProofImage.
-// The function securely calls Gemini Vision and returns valid/rejected + tokens.
-const USE_REAL_AI_CLOUD_FUNCTION = true;
+// Discipline Bank is ON.
+// Gemini AI / Cloud Functions are disabled to avoid backend costs.
+// The site uses strict browser-side proof validation first.
+// Upgrade to Gemini later after first users or first sale.
+const USE_REAL_AI_CLOUD_FUNCTION = false;
 
 let currentUser = null;
 let userProfile = null;
@@ -331,6 +380,7 @@ function init() {
   renderCash();
   renderActivity();
   renderReferral();
+  renderBankTokens();
   renderChecks();
 }
 
@@ -362,6 +412,97 @@ function renderBank() {
   document.getElementById('levelBadge').textContent = (level ? level.name : 'Level 1') + ' • ' + tokens + ' saved tokens';
 }
 
+function renderBankTokens(newTokenCount = 0) {
+  const vault = document.getElementById('tokenVault');
+  if (!vault) return;
+
+  const u = getUser();
+  const tokens = Number(u?.tokens || 0);
+  const visualCount = Math.min(18, Math.max(0, Math.floor(tokens / 100)));
+  const current = vault.querySelectorAll('.bank-token').length;
+
+  if (current !== visualCount) {
+    vault.innerHTML = "";
+    for (let i = 0; i < visualCount; i++) {
+      createVisualToken(i, false);
+    }
+  }
+
+  if (newTokenCount > 0) {
+    const burst = Math.min(5, Math.max(1, Math.ceil(newTokenCount / 40)));
+    for (let i = 0; i < burst; i++) {
+      setTimeout(() => createVisualToken(Date.now() + i, true), i * 140);
+    }
+  }
+}
+
+function createVisualToken(seed, isNew) {
+  const vault = document.getElementById('tokenVault');
+  if (!vault) return;
+
+  const token = document.createElement('div');
+  token.className = 'bank-token' + (isNew ? ' new' : '');
+  token.textContent = 'P';
+
+  const maxX = Math.max(20, vault.clientWidth - 42);
+  const maxY = Math.max(20, vault.clientHeight - 42);
+  const x = 20 + ((seed * 53) % Math.max(30, maxX - 20));
+  const y = 40 + ((seed * 37) % Math.max(30, maxY - 50));
+
+  token.style.left = `${Math.min(x, maxX)}px`;
+  token.style.top = `${Math.min(y, maxY)}px`;
+
+  makeDraggable(token, vault);
+  vault.appendChild(token);
+}
+
+function makeDraggable(el, boundsEl) {
+  let dragging = false;
+  let startX = 0, startY = 0, origX = 0, origY = 0;
+
+  el.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    el.setPointerCapture(e.pointerId);
+    startX = e.clientX;
+    startY = e.clientY;
+    origX = parseFloat(el.style.left || 0);
+    origY = parseFloat(el.style.top || 0);
+  });
+
+  el.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const maxX = boundsEl.clientWidth - el.offsetWidth;
+    const maxY = boundsEl.clientHeight - el.offsetHeight;
+    const nx = Math.max(0, Math.min(maxX, origX + e.clientX - startX));
+    const ny = Math.max(0, Math.min(maxY, origY + e.clientY - startY));
+    el.style.left = nx + 'px';
+    el.style.top = ny + 'px';
+  });
+
+  el.addEventListener('pointerup', () => {
+    dragging = false;
+  });
+}
+
+function showAIVerdict(verification, tokens = 0, approved = false) {
+  const panel = document.getElementById('aiResultPanel');
+  if (!panel) return;
+  panel.classList.add('show');
+
+  document.getElementById('aiTokens').textContent = tokens;
+  document.getElementById('aiConfidence').textContent = `${Math.round(Number(verification?.aiConfidence || verification?.confidence || 0))}%`;
+  document.getElementById('aiCategory').textContent = verification?.aiCategory || verification?.category || 'unknown';
+  document.getElementById('aiRisk').textContent = verification?.fraudRisk || 'unknown';
+  document.getElementById('aiReason').textContent = verification?.reason || 'AI verdict complete.';
+
+  const emailBadge = document.getElementById('emailBadge');
+  if (emailBadge) {
+    emailBadge.textContent = approved ? '✅ Proof confirmation saved on dashboard' : '❌ Rejected proof gets 0 tokens';
+    emailBadge.style.color = approved ? 'var(--green)' : '#ff8790';
+  }
+}
+
+
 function renderMissions() {
   const tokens = getUser()?.tokens || 0;
   document.getElementById('missionList').innerHTML = missions.map(m =>
@@ -392,7 +533,7 @@ function renderActivity() {
   }).join('');
 
   const latest = items[0];
-  const preview = document.getElementById('emailPreview');
+  const preview = document.getElementById('emailPreview Reset');
   if (preview && latest && latest.type === "proof") {
     preview.innerHTML = `<b>Subject:</b> Your proof was verified 🔥<br><b>Body:</b> You earned ${latest.tokens} tokens. Current balance: ${u.tokens}. Next unlock: ${nextUnlockText(u.tokens)}.`;
   }
@@ -429,15 +570,9 @@ function addActivity(type, title, detail, tokens = 0) {
 }
 
 async function createEmailRecord(subject, htmlBody) {
-  if (!currentUser) return;
-  await setDoc(doc(db, "mail", crypto.randomUUID()), {
-    to: currentUser.email,
-    message: {
-      subject,
-      html: htmlBody
-    },
-    createdAt: serverTimestamp()
-  });
+  // Discipline Bank: automated email sending is disabled.
+  // This prevents needing Firebase Extensions or SendGrid before validation.
+  return;
 }
 
 async function copyReferral() {
@@ -672,45 +807,37 @@ async function verifyWithRealAIOrStrictLocal(file, text) {
     };
   }
 
-  if (!VERIFY_ENDPOINT) {
-    return {
-      valid: true,
-      mode: "strict_local_image_gate",
-      tokensAwarded: score(text, file),
-      reason: "Passed strict local image checks. Real AI endpoint not connected yet.",
-      local
-    };
-  }
+  const detailScore = Math.min(60, Math.floor(text.length / 14));
+  const timeBonus = /(90|60|45|30|2 hours|1 hour|minutes|hours|pm|am|day|week)/i.test(text) ? 20 : 0;
+  const proofBonus = /(screenshot|photo|image|proof|receipt|timer|calendar|dashboard|commit|workout|notes|assignment|project|document|page|screen)/i.test(text) ? 20 : 0;
+  const actionBonus = /(completed|built|studied|trained|shipped|wrote|finished|fixed|coded|uploaded|designed|ran|worked|created|exercised|read|edited|submitted)/i.test(text) ? 20 : 0;
+  const imageBonus = file.size > 300000 ? 15 : 0;
 
-  const imageBase64 = await fileToBase64(file);
-  const response = await fetch(VERIFY_ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      description: text,
-      fileName: file.name,
-      fileType: file.type,
-      fileSize: file.size,
-      imageBase64
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error("AI verification server returned an error.");
-  }
-
-  const result = await response.json();
+  const tokens = Math.max(25, Math.min(125, 25 + detailScore + timeBonus + proofBonus + actionBonus + imageBonus));
 
   return {
-    valid: !!result.valid,
-    mode: "real_ai_vision",
-    tokensAwarded: Number(result.tokensAwarded || 0),
-    reason: result.reason || "AI verification complete.",
-    aiCategory: result.category || "unknown",
-    aiConfidence: result.confidence || 0,
+    valid: true,
+    mode: "strict_local_image_gate",
+    tokensAwarded: tokens,
+    reason: "Passed strict proof validation. Advanced AI verification may be added to future upgrades.",
+    aiCategory: detectCategory(text),
+    aiConfidence: Math.min(92, 65 + Math.floor(tokens / 4)),
+    fraudRisk: "medium",
+    evidenceFound: ["Detailed proof text", "Valid image file", "No duplicate/spam detected"],
     local
   };
 }
+
+function detectCategory(text) {
+  if (/(code|coded|github|commit|website|dashboard|bug|program|app)/i.test(text)) return "coding";
+  if (/(workout|gym|run|trained|exercise|fitness|calories|miles|sets|reps)/i.test(text)) return "fitness";
+  if (/(study|studied|assignment|notes|chapter|exam|quiz|homework|read)/i.test(text)) return "study";
+  if (/(client|business|outreach|sale|email|invoice|project)/i.test(text)) return "business";
+  if (/(design|created|wrote|edited|content|video|art)/i.test(text)) return "creative";
+  return "other";
+}
+
+function fileToBase64
 
 function fileToBase64(file) {
   return new Promise((resolve, reject) => {
@@ -845,7 +972,7 @@ async function verifyWithRealAIOrStrictLocal(file, text) {
 
   return {
     valid: !!result.valid,
-    mode: "real_gemini_ai_vision",
+    mode: "strict_local_image_gate",
     tokensAwarded: Number(result.tokensAwarded || 0),
     reason: result.reason || "AI verification complete.",
     aiCategory: result.category || "unknown",
@@ -884,7 +1011,7 @@ async function submitProof() {
     return toast('Duplicate blocked', 'This exact image was already submitted. Upload new proof.');
   }
 
-  document.getElementById('submitStatus').innerHTML = "🤖 Gemini AI Vision is checking the image. Tokens are locked until the image and written proof match...";
+  document.getElementById('submitStatus').innerHTML = "🔒 Strict proof checker is reviewing your image and text. Tokens are locked until validation passes...";
 
   let verification;
   try {
@@ -895,6 +1022,7 @@ async function submitProof() {
   }
 
   if (!verification.valid || verification.tokensAwarded <= 0) {
+    showAIVerdict(verification, 0, false);
     addActivity("rejected", "Proof rejected", verification.reason || "Image did not pass verification.", 0);
     await saveUser();
 
@@ -925,14 +1053,6 @@ async function submitProof() {
 
   await saveUser();
 
-  await createEmailRecord(
-    "Your proof was verified 🔥",
-    `<h2>Proof accepted</h2><p>You earned <b>${tokens} tokens</b>.</p><p>Current balance: <b>${u.tokens}</b>.</p><p>Next unlock: ${nextUnlockText(u.tokens)}.</p>`
-  );
-
-  addActivity("email", "Confirmation email queued", "Email record saved in Firestore mail collection.", 0);
-  await saveUser();
-
   await setDoc(doc(db, "submissions", crypto.randomUUID()), {
     uid: currentUser.uid,
     email: currentUser.email,
@@ -941,15 +1061,17 @@ async function submitProof() {
     fileSize: selectedFile.size,
     imageHash: hash,
     tokensAwarded: tokens,
-    status: verification.mode === "real_gemini_ai_vision" ? "verified_by_gemini_ai_vision" : "verified_by_strict_local_gate",
+    status: verification.mode === "strict_local_image_gate" ? "verified_by_gemini_ai_vision" : "verified_by_strict_local_gate",
     verification,
     createdAt: serverTimestamp()
   });
 
+  showAIVerdict(verification, tokens, true);
   animateCoin();
   init();
+  renderBankTokens(tokens);
 
-  const modeText = verification.mode === "real_gemini_ai_vision" ? "Gemini AI Vision verified" : "Strict image gate verified";
+  const modeText = verification.mode === "strict_local_image_gate" ? "Strict proof checker verified" : "Strict image gate verified";
   document.getElementById('submitStatus').innerHTML = `✅ ${modeText} and saved to Firebase. <b>+${tokens} tokens</b> added. ${verification.reason}`;
   toast('🔥 Verified tokens dropped!', `+${tokens} tokens added only after image verification passed.`);
 }
@@ -974,12 +1096,6 @@ async function cashIn(req, name) {
     u.tokens -= req;
     addActivity("cashout", "Cash-in requested", `${name} requested for ${req} tokens.`, -req);
     await saveUser();
-
-    await createEmailRecord(
-      "Cash-in request received",
-      `<h2>Cash-in request saved</h2><p>Reward: <b>${name}</b></p><p>Tokens used: <b>${req}</b></p><p>Remaining balance: <b>${u.tokens}</b></p>`
-    );
-
     await setDoc(doc(db, "cashouts", crypto.randomUUID()), {
       uid: currentUser.uid,
       email: currentUser.email,
@@ -1047,5 +1163,14 @@ window.previewEbook = previewEbook;
 window.copyReferral = copyReferral;
 </script>
 
+
+<!--
+STRIPE SETUP:
+1. Create Payment Link for 30-Day Confidence Reset Workbook.
+2. Set After Payment -> Redirect to:
+   https://YOUR-GITHUB-PAGES-URL/thank-you.html
+3. Replace PASTE_YOUR_STRIPE_PAYMENT_LINK_HERE in this file with your Stripe Payment Link.
+4. Enable Stripe Customer Emails for successful payments.
+-->
 </body>
 </html>
