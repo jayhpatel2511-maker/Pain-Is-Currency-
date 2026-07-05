@@ -2,27 +2,96 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07080f">
 <title>Your 30-Day Confidence Reset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#06070d;--panel:#0f1320;--red:#ff2638;--gold:#ffd36a;--muted:#a8afc2;--line:#2b3348;}
-*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(255,38,56,.2),transparent 30%),linear-gradient(180deg,#05060b,#090d17);color:white;min-height:100vh;display:grid;place-items:center;padding:24px}
-.card{max-width:860px;background:rgba(15,19,32,.9);border:1px solid rgba(255,255,255,.1);border-radius:28px;box-shadow:0 24px 80px rgba(0,0,0,.55);padding:34px}
-.logo{width:58px;height:58px;border-radius:20px;background:radial-gradient(circle at 30% 25%,#fff2b3 0 14%,#ffd36a 15% 38%,#ff2638 39% 100%);display:grid;place-items:center;font-weight:1000;margin-bottom:18px;box-shadow:0 0 35px rgba(255,38,56,.38)}
-h1{font-size:clamp(34px,6vw,64px);line-height:.95;margin:0 0 16px;letter-spacing:-2px} h1 span{color:var(--red)} p{color:#c7cedd;line-height:1.7;font-size:17px} .btn{display:inline-flex;margin-top:20px;background:linear-gradient(135deg,var(--red),#b80718);color:white;text-decoration:none;padding:16px 22px;border-radius:16px;font-weight:1000;box-shadow:0 0 35px rgba(255,38,56,.28)} .secondary{background:#171d2e;border:1px solid var(--line);margin-left:10px} .box{background:#080c15;border:1px solid #273149;border-radius:18px;padding:18px;margin-top:20px} small{color:var(--muted)}
+:root{--bg:#07080f;--panel:#101426;--red:#ff3d4e;--gold:#ffd36a;--green:#4ef08a;--muted:#a9b1c7;--line:#2c3550;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(255,61,78,.2),transparent 30%),radial-gradient(circle at 80% 85%,rgba(255,211,106,.1),transparent 30%),linear-gradient(180deg,#06070c,#0a0e1b);color:#fff;min-height:100vh;display:grid;place-items:center;padding:24px}
+h1{font-family:"Baloo 2",sans-serif}
+.card{max-width:760px;width:100%;background:rgba(16,20,38,.92);border:1px solid rgba(255,255,255,.11);border-radius:28px;box-shadow:0 24px 80px rgba(0,0,0,.55);padding:34px;animation:pop .4s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes pop{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
+.logo{width:58px;height:58px;border-radius:20px;background:radial-gradient(circle at 30% 25%,#fff2b3 0 14%,#ffd36a 15% 38%,#ff3d4e 39% 100%);display:grid;place-items:center;font-weight:900;margin-bottom:18px;box-shadow:0 0 35px rgba(255,61,78,.38)}
+h1{font-size:clamp(32px,6vw,58px);line-height:.98;margin:0 0 16px;letter-spacing:-1px}
+h1 span{color:var(--red)}
+p{color:#c7cedd;line-height:1.7;font-size:16.5px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:linear-gradient(135deg,var(--red),#c40f22);color:#fff;text-decoration:none;padding:16px 24px;border-radius:16px;font-weight:900;box-shadow:0 0 35px rgba(255,61,78,.28);border:0;font-size:16px;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.secondary{background:#181e33;border:1px solid var(--line);margin-left:10px;box-shadow:none}
+.box{background:#0a0e1a;border:1px solid #273149;border-radius:18px;padding:18px;margin-top:22px}
+small{color:var(--muted);line-height:1.6}
+.spin{width:42px;height:42px;border-radius:50%;border:4px solid #273149;border-top-color:var(--red);animation:rot 1s linear infinite;margin:8px 0 14px}
+@keyframes rot{to{transform:rotate(360deg)}}
+.state{display:none}.state.show{display:block}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;font-weight:900;font-size:13px;margin-bottom:14px}
+.badge.ok{background:rgba(78,240,138,.12);border:1px solid rgba(78,240,138,.35);color:var(--green)}
+.badge.no{background:rgba(255,61,78,.12);border:1px solid rgba(255,61,78,.35);color:#ff8790}
 </style>
 </head>
 <body>
   <main class="card">
     <div class="logo">PIC</div>
-    <h1>Your Reset Is <span>Unlocked.</span></h1>
-    <p>Thank you for purchasing the <b>30-Day Confidence Reset Workbook</b>. Download your premium workbook below and save a copy to your device.</p>
-    <a class="btn" href="downloads/30-Day-Confidence-Reset-Workbook.pdf" download>Download Workbook PDF</a>
-    <a class="btn secondary" href="index.html">Return to Dashboard</a>
-    <div class="box">
-      <p><b>How to use it:</b> Complete one page per day for 30 days. Each day turns discomfort into proof, and proof into confidence.</p>
-      <small>If you lose this page, check your Stripe receipt for the product name and contact the seller with your purchase email.</small>
+
+    <div class="state show" id="checking">
+      <div class="spin"></div>
+      <h1>Verifying your <span>purchase…</span></h1>
+      <p>We're confirming your payment with Stripe. This takes just a second.</p>
+    </div>
+
+    <div class="state" id="unlocked">
+      <div class="badge ok">✓ PAYMENT VERIFIED</div>
+      <h1>Your Reset Is <span>Unlocked.</span></h1>
+      <p>Thank you for purchasing the <b>30-Day Confidence Reset Workbook</b>. Your payment is verified — download your workbook below and save a copy to your device. This page stays linked in your Stripe email receipt, so you can come back anytime.</p>
+      <button class="btn" id="dlBtn">⬇️ Download Workbook PDF</button>
+      <a class="btn secondary" href="index.html">Return to Dashboard</a>
+      <div class="box">
+        <p style="margin:0"><b>How to use it:</b> complete one page per day for 30 days. Each day turns discomfort into proof, and proof into confidence.</p>
+      </div>
+    </div>
+
+    <div class="state" id="locked">
+      <div class="badge no">✕ NO VERIFIED PURCHASE</div>
+      <h1>This page is for <span>buyers.</span></h1>
+      <p id="lockReason">We couldn't verify a completed payment for this link. If you just paid, use the link on your Stripe receipt or try refreshing. If you haven't bought the workbook yet, grab it below — it's delivered here instantly after checkout.</p>
+      <a class="btn" href="https://buy.stripe.com/dRmbJ21jUdYSdSrayX0Ny00">🔒 Buy the Workbook — $19.99</a>
+      <a class="btn secondary" href="index.html">Back to Site</a>
+      <div class="box"><small>Already purchased? Your Stripe receipt email contains your personal verified link. Need help? Reply to your receipt email and we'll sort it out.</small></div>
     </div>
   </main>
+
+<script>
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const sessionId = params.get('session_id');
+  const show = id => {
+    document.querySelectorAll('.state').forEach(s => s.classList.remove('show'));
+    document.getElementById(id).classList.add('show');
+  };
+
+  if (!sessionId) { show('locked'); return; }
+
+  try {
+    const r = await fetch('/api/verify-purchase?session_id=' + encodeURIComponent(sessionId));
+    const data = await r.json();
+    if (r.ok && data.paid) {
+      show('unlocked');
+      document.getElementById('dlBtn').onclick = () => {
+        location.href = '/api/download?session_id=' + encodeURIComponent(sessionId);
+      };
+    } else {
+      if (data.reason || data.error) document.getElementById('lockReason').textContent = (data.reason || data.error) + ' If you just paid, wait a few seconds and refresh this page.';
+      show('locked');
+    }
+  } catch {
+    document.getElementById('lockReason').textContent = 'The verification server could not be reached. Please refresh in a moment.';
+    show('locked');
+  }
+})();
+</script>
 </body>
 </html>
