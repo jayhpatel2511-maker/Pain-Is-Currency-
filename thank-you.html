@@ -3,34 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#07080f">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f2e9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c1512" media="(prefers-color-scheme: dark)">
 <title>Your 30-Day Confidence Reset</title>
+<link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07080f;--panel:#101426;--red:#ff3d4e;--gold:#ffd36a;--green:#4ef08a;--muted:#a9b1c7;--line:#2c3550;color-scheme:dark}
+:root{
+  --bg:#f7f2e9;--card:#ffffff;--ink:#211f19;--ink2:#3c382e;--muted:#7a7466;--line:#e7dfcd;
+  --amber:#e8930c;--gold:#f2b544;--forest:#112a22;--forest-line:#28453a;
+  --mint:#12b76a;--mintbg:#e9f8f0;--mint-ink:#0c7a49;--danger:#d64545;--dangerbg:#fdeeee;
+  --shadow:0 24px 60px rgba(60,45,10,.14);
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0c1512;--card:#13211a;--ink:#f0ece1;--ink2:#d9d4c6;--muted:#96a89c;--line:#24352c;
+  --mintbg:#12291e;--mint-ink:#5fe3a4;--dangerbg:#331a1a;--danger:#ff7b7b;
+  --shadow:0 24px 60px rgba(0,0,0,.55);
+}}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(255,61,78,.2),transparent 30%),radial-gradient(circle at 80% 85%,rgba(255,211,106,.1),transparent 30%),linear-gradient(180deg,#06070c,#0a0e1b);color:#fff;min-height:100vh;display:grid;place-items:center;padding:24px}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(242,181,68,.16),transparent 30%),radial-gradient(circle at 80% 85%,rgba(18,183,106,.08),transparent 30%),var(--bg);color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:24px}
 h1{font-family:"Baloo 2",sans-serif}
-.card{max-width:760px;width:100%;background:rgba(16,20,38,.92);border:1px solid rgba(255,255,255,.11);border-radius:28px;box-shadow:0 24px 80px rgba(0,0,0,.55);padding:34px;animation:pop .4s cubic-bezier(.2,.9,.3,1.2)}
+.card{max-width:760px;width:100%;background:var(--card);border:1.5px solid var(--line);border-radius:26px;box-shadow:var(--shadow);padding:34px;animation:pop .4s cubic-bezier(.2,.9,.3,1.2)}
 @keyframes pop{from{transform:scale(.95);opacity:0}to{transform:scale(1);opacity:1}}
-.logo{width:58px;height:58px;border-radius:20px;background:radial-gradient(circle at 30% 25%,#fff2b3 0 14%,#ffd36a 15% 38%,#ff3d4e 39% 100%);display:grid;place-items:center;font-weight:900;margin-bottom:18px;box-shadow:0 0 35px rgba(255,61,78,.38)}
-h1{font-size:clamp(32px,6vw,58px);line-height:.98;margin:0 0 16px;letter-spacing:-1px}
-h1 span{color:var(--red)}
-p{color:#c7cedd;line-height:1.7;font-size:16.5px}
-.btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:linear-gradient(135deg,var(--red),#c40f22);color:#fff;text-decoration:none;padding:16px 24px;border-radius:16px;font-weight:900;box-shadow:0 0 35px rgba(255,61,78,.28);border:0;font-size:16px;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-.btn[disabled]{opacity:.5;cursor:not-allowed}
-.secondary{background:#181e33;border:1px solid var(--line);margin-left:10px;box-shadow:none}
-.box{background:#0a0e1a;border:1px solid #273149;border-radius:18px;padding:18px;margin-top:22px}
+.logo{width:58px;height:58px;border-radius:18px;background:radial-gradient(circle at 32% 26%,#ffedc2 0 16%,var(--gold) 17% 42%,var(--amber) 43% 100%);display:grid;place-items:center;font-weight:900;color:#fff;margin-bottom:18px;box-shadow:0 8px 26px rgba(232,147,12,.35)}
+h1{font-size:clamp(32px,6vw,56px);line-height:.98;margin:0 0 16px;color:var(--ink)}
+h1 span{color:var(--amber)}
+p{color:var(--ink2);line-height:1.7;font-size:16.5px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:20px;background:linear-gradient(135deg,#f5a623,var(--amber));color:#fff;text-decoration:none;padding:16px 24px;border-radius:15px;font-weight:900;box-shadow:0 8px 26px rgba(232,147,12,.35);border:0;font-size:16px;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.secondary{background:var(--forest);border:1px solid var(--forest-line);margin-left:10px;box-shadow:none;color:#e9f4ec}
+.box{background:var(--bg);border:1.5px solid var(--line);border-radius:16px;padding:18px;margin-top:22px}
 small{color:var(--muted);line-height:1.6}
-.spin{width:42px;height:42px;border-radius:50%;border:4px solid #273149;border-top-color:var(--red);animation:rot 1s linear infinite;margin:8px 0 14px}
+.spin{width:42px;height:42px;border-radius:50%;border:4px solid var(--line);border-top-color:var(--amber);animation:rot 1s linear infinite;margin:8px 0 14px}
 @keyframes rot{to{transform:rotate(360deg)}}
 .state{display:none}.state.show{display:block}
 .badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;font-weight:900;font-size:13px;margin-bottom:14px}
-.badge.ok{background:rgba(78,240,138,.12);border:1px solid rgba(78,240,138,.35);color:var(--green)}
-.badge.no{background:rgba(255,61,78,.12);border:1px solid rgba(255,61,78,.35);color:#ff8790}
+.badge.ok{background:var(--mintbg);border:1.5px solid var(--mint);color:var(--mint-ink)}
+.badge.no{background:var(--dangerbg);border:1.5px solid var(--danger);color:var(--danger)}
 </style>
 </head>
 <body>
